@@ -1,12 +1,113 @@
-# React + Vite
+# Forex Trade Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Demo GIF](./public/gif.gif)  
+*Website preview: [https://forex-trade-web.vercel.app/]*
 
-Currently, two official plugins are available:
+> A responsive, component‑driven React starter for a modern forex‑trading
+> landing page. Built with Vite, TailwindCSS, GSAP animations, and
+> Framer‑Motion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Quick overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This repo is a “starter kit” for a forex trading platform or financial
+service. It demonstrates:
+
+- a hero section with animated headline
+- feature list, pricing tiers and testimonial carousel
+- sticky navbar, footer and call‑to‑action block
+- scroll‑linked GSAP/ScrollSmoother effects
+- TailwindCSS utility classes and responsive design
+- data‑driven components using `src/assets/data.jsx`
+
+Most layout is handled in `src/App.jsx`; sections live under
+`src/sections` and reusable pieces under `src/components`.
+
+---
+
+## 🧱 Tech stack
+
+- **React 18** (Vite + JSX)
+- **TailwindCSS 3** for styling
+- **GSAP** & **ScrollSmoother** for scroll animations
+- **Framer‑Motion** for component transitions
+- Vite for blazing‑fast dev experience
+- ESLint / Prettier (via `npm run lint`)  
+- (Optional) Deployment with any static host (Netlify, Vercel, GitHub
+  Pages, etc.)
+
+---
+
+## 📁 Project structure
+
+```
+src/
+├─ assets/          # static data, images
+│  └─ data.jsx
+├─ components/      # reusable UI pieces
+│  ├─ Navbar.jsx
+│  ├─ Footer.jsx
+│  └─ …
+├─ sections/        # page sections
+│  ├─ HeroSec.jsx
+│  ├─ FeaturesSection.jsx
+│  └─ …
+├─ pages/           # top‑level pages (currently only HomePage)
+│  └─ HomePage.jsx
+├─ App.jsx
+├─ main.jsx
+└─ index.css        # Tailwind imports & custom styles
+```
+
+---
+
+## 📦 Installation & development
+
+```bash
+# clone & move into project
+git clone https://github.com/Rizzwannndev/Forex-Trade-Web.git
+cd Forex-Trade-Web
+
+# install dependencies
+npm install
+
+# start dev server
+npm run dev         # http://localhost:5173
+
+# build for production
+npm run build
+
+# preview production build locally
+npm run preview
+
+# lint & format
+npm run lint
+```
+
+---
+
+## ⚙️ Customization
+
+- Replace the placeholder GIF/link above when your demo is ready.
+- Update `src/assets/data.jsx` with real features, pricing, testimonials.
+- Tweak colors/spacing in `tailwind.config.js` or `src/index.css`.
+- Add/remove sections by editing `HomePage.jsx` and the
+  corresponding component files.
+- Drop images in `public/` and reference them from your JSX.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Please open issues or pull requests against the [`main` branch](https://github.com/Rizzwannndev/Forex-Trade-Web).
+
+---
+
+## 📜 License
+
+This project is open source.
+
+---
+
